@@ -1,5 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
 }
+a {
+  color: inherit;
+}
+.container {
+  margin: 0px auto;
+  max-width: 1280px;
+  padding: 20px;
+}
+body {
+  background-color: black;
+}
+
