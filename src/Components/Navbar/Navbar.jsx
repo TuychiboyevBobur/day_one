@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "../images/Logo.png";
+import logo from "../images/logo.png";
 import { MdDateRange } from "react-icons/md";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { Link } from "react-router-dom";
