@@ -2,15 +2,23 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 0;
+  margin-top: 20px;
+  background-color: #000;
+  z-index: 999;
+  padding: 10px 0;
   position: sticky;
-  top: 5px;
+  top: 0px;
 }
 .logo{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+.date{
+  padding: 0;
+  margin: 0;
+  color: #8f8f8f;
 }
 ul, li a{
   display: flex;
@@ -19,6 +27,7 @@ ul, li a{
   gap: 30px;
   list-style: none;
   text-decoration: none;
+  color: #8f8f8f;
 }
 .nav-btn{
   display: flex;
@@ -26,9 +35,37 @@ ul, li a{
   align-items: center;
   background-color: #A92A1D;
   border: none;
-  padding: 5px 30px;
+  width: 150px;
+  height: 35px;
+  color: #f4e4e3;
+  border-radius: 10px 2px;
 }
+
+.nav-btn:hover{
+  background-color: red;
+  box-shadow: 0 5px 50px 10px red;
+}
+
 .nav-logo{
-  border-radius: 50%;
-  width: 40px;
+  width: 100px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.logo1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo1 h1{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 2rem;
+}
+.date1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }

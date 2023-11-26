@@ -1,7 +1,9 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "../images/logo.png";
+import logo from "../images/Logo.png";
+import { MdDateRange } from "react-icons/md";
 import { MdOutlineAccountCircle } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const date = new Date();
@@ -12,28 +14,47 @@ export const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <img src={logo} className="nav-logo" alt="logo" />
-        <p>{`${day}.${month}.${year}`}</p>
+        <Link to="/">
+          <img src={logo} className="nav-logo" alt="logo" />
+        </Link>
+        <div className="date1">
+          <MdDateRange style={{ color: "red" }} />
+          <p className="date">{`${day}.${month}.${year}`}</p>
+        </div>
       </div>
       <ul>
         <li>
-          <a href="">Traning</a>
+          <Link to="/" exact activeClassName="active-link">
+            Home
+          </Link>
         </li>
         <li>
-          <a href="">Studio Classess</a>
+          <Link to="/traning" activeClassName="active-link">
+            Traning
+          </Link>
         </li>
         <li>
-          <a href="">Lifestyle</a>
+          <Link to="/studio" activeClassName="active-link">
+            Studio Classess
+          </Link>
         </li>
         <li>
-          <a href="">About us</a>
+          <Link to="/lifestyle" activeClassName="active-link">
+            Lifestyle
+          </Link>
         </li>
         <li>
-          <a href="">
-          <button className="nav-btn">
-            <MdOutlineAccountCircle size={30} style={{ color: "white" }} />
-          </button>
-          </a>
+          <Link to="/about" activeClassName="active-link">
+            About us
+          </Link>
+        </li>
+        <li>
+          <Link to="/account">
+            <button className="nav-btn">
+              <MdOutlineAccountCircle size={30} style={{ color: "#f4e4e3" }} />
+              Account
+            </button>
+          </Link>
         </li>
       </ul>
     </nav>
